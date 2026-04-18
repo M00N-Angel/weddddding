@@ -396,15 +396,15 @@ function Page1Welcome({ guestName, flag, visible, isMobile, showLockHint = false
   const textContent = visible && guestName ? (
     <>
       <p className="animate-fade-slide-up delay-1"
-        style={{ fontSize: 'clamp(1.05rem, 2.5vw, 1.8rem)', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.80)', fontStyle: 'italic', marginBottom: '-0.1rem' }}>
+        style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.8rem)', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.80)', fontStyle: 'italic', marginBottom: '-0.1rem' }}>
         {t.greeting}
       </p>
       <h1 className="animate-fade-slide-up delay-2 font-great-vibes"
-        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(255,219,107,0.65)', margin: 0 }}>
+        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(148,255,196,0.75)', margin: 0 }}>
         {guestName}!
       </h1>
       <p className="animate-fade-slide-up delay-3 font-cormorant"
-        style={{ fontSize: 'clamp(0.90rem, 3vw, 1.35rem)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.5, margin: 0 }}>
+        style={{ fontSize: 'clamp(0.85rem, 3vw, 1.35rem)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.5, margin: 0 }}>
         ☾ У нас есть для {t.forYou} особенная новость ☽ 
       </p>
       <p className="animate-fade-slide-up delay-4 font-cormorant"
