@@ -408,7 +408,7 @@ function Page1Welcome({ guestName, flag, visible, isMobile, showLockHint = false
         ☾ У нас есть для {t.forYou} особенная новость ☽ 
       </p>
       <p className="animate-fade-slide-up delay-4 font-cormorant"
-        style={{ fontSize: 'clamp(1.20rem, 2.8vw, 1.3rem)', color: 'rgba(255,255,255,0.78)', fontStyle: 'italic', lineHeight: 1.55, maxWidth: 460 }}>
+        style={{ fontSize: 'clamp(1.18rem, 2.8vw, 1.3rem)', color: 'rgba(255,255,255,0.78)', fontStyle: 'italic', lineHeight: 1.55, maxWidth: 460 }}>
         Совсем скоро произойдёт событие, которое мы бы очень хотели разделить вместе с {t.withYou} 🤍
       </p>
       <p className="animate-fade-slide-up delay-5 font-playfair"
