@@ -400,11 +400,11 @@ function Page1Welcome({ guestName, flag, visible, isMobile, showLockHint = false
         {t.greeting}
       </p>
       <h1 className="animate-fade-slide-up delay-2 font-great-vibes"
-        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(230,230,250,0.75)', margin: 0 }}>
+        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(255,219,107,0.65)', margin: 0 }}>
         {guestName}!
       </h1>
       <p className="animate-fade-slide-up delay-3 font-cormorant"
-        style={{ fontSize: 'clamp(1.12rem, 3vw, 1.35rem)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.5, margin: 0 }}>
+        style={{ fontSize: 'clamp(0.90rem, 3vw, 1.35rem)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.5, margin: 0 }}>
         ☾ У нас есть для {t.forYou} особенная новость ☽ 
       </p>
       <p className="animate-fade-slide-up delay-4 font-cormorant"
