@@ -396,11 +396,11 @@ function Page1Welcome({ guestName, flag, visible, isMobile, showLockHint = false
   const textContent = visible && guestName ? (
     <>
       <p className="animate-fade-slide-up delay-1"
-        style={{ fontSize: 'clamp(1.05rem, 2.5vw, 1.8rem)', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.75)', fontStyle: 'italic', marginBottom: '-0.1rem' }}>
+        style={{ fontSize: 'clamp(1.05rem, 2.5vw, 1.8rem)', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.80)', fontStyle: 'italic', marginBottom: '-0.1rem' }}>
         {t.greeting}
       </p>
       <h1 className="animate-fade-slide-up delay-2 font-great-vibes"
-        style={{ fontSize: 'clamp(2.6rem, 8vw, 4.2rem)', lineHeight: 1.15, color: 'rgba(255,240,245,0.75)', margin: 0 }}>
+        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(230,230,250,0.75)', margin: 0 }}>
         {guestName}!
       </h1>
       <p className="animate-fade-slide-up delay-3 font-cormorant"
@@ -440,7 +440,7 @@ function Page1Welcome({ guestName, flag, visible, isMobile, showLockHint = false
       <div className="bg-overlay" />
       <div className="section-content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.9rem' }}>
         {/* Frosted glass card on desktop only */}
-        {!isMobile && visible ? (
+        {visible ? (
           <div style={{
             position: 'relative',
             background: 'rgba(255,255,255,0.07)',
