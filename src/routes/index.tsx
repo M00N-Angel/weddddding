@@ -396,19 +396,19 @@ function Page1Welcome({ guestName, flag, visible, isMobile, showLockHint = false
   const textContent = visible && guestName ? (
     <>
       <p className="animate-fade-slide-up delay-1"
-        style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.8rem)', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.80)', fontStyle: 'italic', marginBottom: '-0.1rem' }}>
+        style={{ fontSize: 'clamp(1.5rem, 2.5vw, 1.8rem)', letterSpacing: '0.15em', color: 'rgba(255,255,255,0.80)', fontStyle: 'italic', marginBottom: '-0.1rem' }}>
         {t.greeting}
       </p>
       <h1 className="animate-fade-slide-up delay-2 font-great-vibes"
-        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(148,255,196,0.75)', margin: 0 }}>
+        style={{ fontSize: 'clamp(2.6rem, 8vw, 3.8rem)', lineHeight: 1.15, color: 'rgba(255,231,209,0.85)', margin: 0 }}>
         {guestName}!
       </h1>
       <p className="animate-fade-slide-up delay-3 font-cormorant"
-        style={{ fontSize: 'clamp(0.85rem, 3vw, 1.35rem)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.5, margin: 0 }}>
+        style={{ fontSize: 'clamp(0.88rem, 3vw, 1.35rem)', color: 'rgba(255,255,255,0.80)', lineHeight: 1.5, margin: 0 }}>
         ☾ У нас есть для {t.forYou} особенная новость ☽ 
       </p>
       <p className="animate-fade-slide-up delay-4 font-cormorant"
-        style={{ fontSize: 'clamp(1.1rem, 2.8vw, 1.3rem)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, maxWidth: 460 }}>
+        style={{ fontSize: 'clamp(1.3rem, 2.8vw, 1.3rem)', color: 'rgba(255,255,255,0.78)', lineHeight: 1.55, maxWidth: 460 }}>
         Совсем скоро произойдёт событие, которое мы бы очень хотели разделить вместе с {t.withYou} 🤍
       </p>
       <p className="animate-fade-slide-up delay-5 font-playfair"
