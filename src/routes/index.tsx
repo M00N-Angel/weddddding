@@ -15,7 +15,6 @@
 
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useEffect, useRef, useCallback } from 'react'
-import emailjs from '@emailjs/browser'
 import guests from '@/data/guests'
 import type { GuestFlag } from '@/data/guests'
 
@@ -599,10 +598,12 @@ function RSVPForm({ guestId, guestName, flag }: { guestId: string | undefined; g
   const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async () => {
-    if (!selected) return
-    setSubmitting(true); setError(null)
-    try {
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+  if (!selected) return
+  setSubmitting(true)
+  setError(null)
+  try {
+    const { default: emailjs } = await import('@emailjs/browser')
+    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
         guest_name: guestName || 'Гость', guest_id: guestId || 'unknown',
         guest_flag: flag || 'unknown', answer: selected,
       }, EMAILJS_PUBLIC_KEY)
@@ -746,7 +747,6 @@ function Page3Details({ flag, guestId, guestName }: { flag: GuestFlag | undefine
 // ─── Main Component ───────────────────────────────────────────────────────────
 
 function WeddingPage() {
-  if (typeof document === 'undefined') return null
   const { id } = Route.useSearch()
   const guest = id ? guests.find((g) => g.id === id) : undefined
   const hasAccess = !!id && !!guest
