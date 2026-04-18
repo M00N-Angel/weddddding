@@ -746,6 +746,7 @@ function Page3Details({ flag, guestId, guestName }: { flag: GuestFlag | undefine
 // ─── Main Component ───────────────────────────────────────────────────────────
 
 function WeddingPage() {
+  if (typeof document === 'undefined') return null
   const { id } = Route.useSearch()
   const guest = id ? guests.find((g) => g.id === id) : undefined
   const hasAccess = !!id && !!guest
