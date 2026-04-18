@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [
     viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
     tailwindcss(),
-    tanstackStart({ target: 'cloudflare-pages' }),
+    tanstackStart({ target: 'static' }),
   ],
 })
